@@ -9,8 +9,69 @@
     <meta name="keywords" content="HTML">
     <meta name="author" content="Victor Ku">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* changing heading one to include color, background, and box model, display*/
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            color: #4CAF50;
+            background-color: rgb(24, 58, 228);
+            font-size: 36px;
+            border: 2px solid rebeccapurple;
+            padding: .5em;
+            margin: 10px, 10px, 15px, 15px;
+            display: block;
+        }
+        /* changing heading two to include box model, display*/
+        h2 {
+            text-align: left;
+            font-size: 1.5em;
+            border-top: 5px dotted green;
+            border-right: 1px solid black;
+            border-bottom: 20px double rgb(23,45,145);
+            display: inline;
+
+        } 
+        /*changing h3 to include text and box model*/
+        h3 {
+            text-align: left;
+            font-size: 1.3rem;
+        }
+        /*changing body to include text*/
+        body{
+            color: red;
+            text-decoration:rgb(24, 58, 228)
+        }  
+        /*sizing*/
+        video{
+            height: 1080px;
+            width: 720;
+            max-width: 1440px;
+            min-width: 1440px;
+            display: static;
+        }  
+        div {
+            box-sizing: border-box;
+            width: 10px;
+            height: 10px;
+            position: sticky;
+            text-align: right;
+            color: pink;
+        }
+        nav:hover{
+            color: purple;
+        }
+        nav:active{
+            color: white;
+        }
+
+    </style>
+
+
   </head>
   <body>
+    <div class="box" id="one">One</div>
     <header> 
       <h1>Meeting Minutes for Team 16 </h1>
       <h2>Icebreakers! To-do list: 4/15/2023</h2>    
