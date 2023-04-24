@@ -145,7 +145,43 @@
         p::first-line {
             color: red;
         }
+        /*selector list*/
+        h2, h3 {
+            color: brown;
+        }
+
+        /* Descendant Combinator*/
+        li {
+            list-style-type: disc;
+        }
         
+        li li {
+          list-style-type: circle;
+        }
+
+        /*Child Combinator*/
+        span {
+          background-color: aqua;
+        }
+        div > span {
+          background-color: yellow;
+        }
+
+        /*General sibling combinator*/
+        p ~ span {
+            color: red;
+        }
+
+        /*Adjacent sibling combinator*/
+        li:first-of-type + li {
+          color: red;
+        }
+
+        /*combining two selectors*/
+        p ~ img {
+            size: 1400px;
+        }
+
     </style>
 
 
