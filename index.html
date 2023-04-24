@@ -12,6 +12,35 @@
 
     <style>
         /* changing heading one to include color, background, and box model, display*/
+        @font-face {
+            font-family: 'vina_sansregular';
+            src: url('vinasans-regular-webfont.woff2') format('woff2'),
+                 url('vinasans-regular-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+
+        }
+        .navigation {
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: flex-end;
+
+          list-style: none;
+          margin: 0; 
+          background: deepskyblue;
+        }
+
+        .navigation a {
+          text-decoration: none;
+          display: block;
+          padding: 1em;
+          color: white;
+        }
+
+        .navigation a:hover {
+          background: #1565C0;
+        }
+        
         h1 {
             text-align: center;
             text-transform: uppercase;
@@ -22,6 +51,7 @@
             padding: .5em;
             margin: 10px, 10px, 15px, 15px;
             display: block;
+            font-family: "vina_sansregular", serif;
         }
         /* changing heading two to include box model, display*/
         h2 {
@@ -65,6 +95,17 @@
         nav:active{
             color: white;
         }
+        @media print, screen{
+            h1 {
+            text-align: left;
+            font-size: 1.5em;
+            border-top: 5px dotted green;
+            border-right: 1px solid black;
+            border-bottom: 20px double rgb(23,45,145);
+            display: inline;
+            } 
+        }
+        
 
     </style>
 
