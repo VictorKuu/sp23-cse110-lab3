@@ -11,14 +11,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
-        /* changing heading one to include color, background, and box model, display*/
+        
+        /*fonts*/
         @font-face {
             font-family: 'vina_sansregular';
             src: url('vinasans-regular-webfont.woff2') format('woff2'),
                  url('vinasans-regular-webfont.woff') format('woff');
             font-weight: normal;
             font-style: normal;
-
+        
+        /* layouts with both flexbox and grid*/
         }
         .navigation {
           display: flex;
@@ -31,6 +33,7 @@
         }
 
         .navigation a {
+          display: grid;
           text-decoration: none;
           display: block;
           padding: 1em;
@@ -40,7 +43,11 @@
         .navigation a:hover {
           background: #1565C0;
         }
-        
+
+        * {
+            text-align: center;
+        }
+        /* changing heading one to include color, background, and box model, display*/
         h1 {
             text-align: center;
             text-transform: uppercase;
@@ -68,12 +75,12 @@
             text-align: left;
             font-size: 1.3rem;
         }
-        /*changing body to include text*/
+        /*changing body to include text, text*/
         body{
             color: red;
             text-decoration:rgb(24, 58, 228)
         }  
-        /*sizing*/
+        /*sizing, position*/
         video{
             height: 1080px;
             width: 720;
@@ -81,6 +88,7 @@
             min-width: 1440px;
             display: static;
         }  
+        /*position, sizing*/
         div {
             box-sizing: border-box;
             width: 10px;
@@ -89,12 +97,17 @@
             text-align: right;
             color: pink;
         }
+
+        /*psudo class*/
         nav:hover{
             color: purple;
         }
+        /*psudo class*/
         nav:active{
             color: white;
         }
+
+        /*responsiveness*/
         @media print, screen{
             h1 {
             text-align: left;
@@ -106,7 +119,21 @@
             } 
         }
         
+        /*class selector*/
+        .center {
+            text-align: center;
+            color: yellow;
+        }
+        /*id selector */
+        #names {
+            color: purple;
+        }
 
+        /*universal selector */
+        * {
+            text-align: center;
+        }
+        
     </style>
 
 
@@ -120,12 +147,13 @@
     <nav>
         <a href="supplement.html">Previous Meeting Minutes</a>
     </nav>
+    
     <section>
-        <h1>Attendance List</h1>
+        <h1 class="center">Attendance List</h1>
         <h2>Present</h2>
         <h3>You get a cookie :3</h3>
         <ul>
-            <li>Johnny Appleseed</li>
+            <li  id="names">Johnny Appleseed</li>
             <li>Cheesepuff Cheetah</li>
             <li>TankTop Masta</li>
             <li>Wonderous Women</li>
